@@ -3,6 +3,8 @@ package com.gurung.NaveenAutomationBBDCucumber.stepDefinitions;
 import java.util.List;
 import java.util.Map;
 
+import org.junit.Assert;
+
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*
 ;
@@ -37,7 +39,7 @@ public class homeDepotStepDefinition {
 
 	@Then("I validate the outcomes")
 	public void i_validate_the_outcomes() {
-	   
+		Assert.assertTrue(true);
 	}
 
 	@Then("check more outcomes")

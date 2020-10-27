@@ -1,7 +1,9 @@
 package com.gurung.NaveenAutomationBBDCucumber.stepDefinitions;
 
 import java.util.List;
+import java.util.Map;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*
 ;
 
@@ -39,7 +41,10 @@ public class homeDepotStepDefinition {
 	}
 
 	@Then("check more outcomes")
-	public void check_more_outcomes() {
+	public void check_more_outcomes(DataTable names) {
+	   for(Map<Object, Object> data:names.asMaps(String.class, String.class)) {
+		   System.out.println("first name is: "+data.get("firstName")+" & last name is: "+data.get("lastName"));
+	   }
 	   
 	}
 

@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 	,plugin= {"pretty","html:target/test-output.html","summary"}
 	,monochrome = true
 	,dryRun = false
-	,tags="@homeDepot"
+	,tags="@homeDepot1"
 	
 
 )

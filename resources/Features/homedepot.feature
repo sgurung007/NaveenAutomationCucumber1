@@ -32,6 +32,10 @@ Feature: Title of your feature
     And yet another action
     Then I validate the outcomes
     And check more outcomes
+    |firstName|lastName|
+    |first1		|last1	|
+    |first2		|last2|
+    |first3		|last3| 
 
   @homeDepot2
   Scenario Outline: Title of your scenario outline
